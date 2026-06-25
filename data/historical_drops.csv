@@ -1,0 +1,51 @@
+drop_name,brand,drop_date,day_of_week,time_est,sell_out_minutes,hype_tier,silhouette_type,season,platform
+Air Jordan 1 Retro High OG "Chicago Reimagined",Nike,2024-02-10,Saturday,10:00,3,S,high_top,Winter,SNKRS
+Yeezy 350 V2 "Onyx",Adidas,2024-02-17,Saturday,09:00,25,A,low_runner,Winter,Adidas
+New Balance 1906R "Protection Pack",New Balance,2024-02-24,Saturday,10:00,45,A,runner,Winter,NB
+Nike Dunk Low "Panda" restock,Nike,2024-03-02,Saturday,10:00,180,B,low_top,Spring,SNKRS
+Air Max 1 "86",Nike,2024-03-09,Saturday,10:00,15,A,runner,Spring,SNKRS
+Adidas Samba OG "Cloud White",Adidas,2024-03-15,Friday,11:00,30,A,court,Spring,Adidas
+New Balance 550 "White Green",New Balance,2024-03-22,Friday,10:00,60,B,court,Spring,NB
+Nike ACG Lowcate "Dark Smoke Grey",Nike,2024-03-28,Thursday,10:00,240,C,trail,Spring,SNKRS
+Salehe Bembury x NB 2002R "Water Be the Guide",New Balance,2024-04-05,Friday,10:00,2,S,runner,Spring,NB
+Air Jordan 4 "Bred Reimagined",Nike,2024-04-20,Saturday,10:00,5,S,high_top,Spring,SNKRS
+Nike Pegasus Trail 5 GTX,Nike,2024-04-26,Friday,10:00,480,C,trail,Spring,SNKRS
+Adidas Ultra 4D "Core Black",Adidas,2024-05-03,Friday,10:00,120,B,runner,Spring,Adidas
+New Balance 990v6 "Made in USA Grey",New Balance,2024-05-10,Friday,10:00,90,B,runner,Spring,NB
+Nike Zoom Vomero 5 "White Silver",Nike,2024-05-17,Friday,10:00,20,A,runner,Spring,SNKRS
+Jordan 3 "White Cement Reimagined",Nike,2024-05-25,Saturday,10:00,8,S,mid_top,Spring,SNKRS
+Nike ACG Mountain Fly 2 Low "Olive",Nike,2024-05-31,Friday,10:00,300,C,trail,Summer,SNKRS
+Adidas Campus 00s "Cloud White Core Black",Adidas,2024-06-07,Friday,10:00,45,A,court,Summer,Adidas
+New Balance 1000 "Rainier",New Balance,2024-06-14,Friday,10:00,180,C,trail,Summer,NB
+Nike Dunk High "Gorge Green",Nike,2024-06-21,Friday,10:00,60,B,high_top,Summer,SNKRS
+Salehe Bembury x Crocs Classic Clog v4,Crocs,2024-06-27,Thursday,11:00,1,S,other,Summer,Crocs
+Air Jordan 1 Low OG "Shadow",Nike,2024-07-06,Saturday,10:00,12,S,low_top,Summer,SNKRS
+Nike Pegasus 41 "Wolf Grey",Nike,2024-07-12,Friday,10:00,480,C,runner,Summer,SNKRS
+Adidas Handball Spezial "Cloud White",Adidas,2024-07-19,Friday,10:00,90,B,court,Summer,Adidas
+New Balance 997H "Sea Salt",New Balance,2024-07-25,Thursday,10:00,120,B,runner,Summer,NB
+Nike ACG Gaiadome GORE-TEX "Cargo Khaki",Nike,2024-08-02,Friday,10:00,360,C,trail,Summer,SNKRS
+Air Jordan 4 "Military Blue 2024",Nike,2024-08-17,Saturday,10:00,4,S,mid_top,Summer,SNKRS
+Yeezy Slide "Onyx",Adidas,2024-08-23,Friday,09:00,60,B,slide,Summer,Adidas
+Nike Air Max 97 "Silver Bullet",Nike,2024-08-30,Friday,10:00,30,A,runner,Summer,SNKRS
+New Balance 2002R "Protection Pack Aluminum",New Balance,2024-09-06,Friday,10:00,45,A,runner,Fall,NB
+Jordan 11 "Velvet Bred",Nike,2024-09-14,Saturday,10:00,6,S,high_top,Fall,SNKRS
+Nike Dunk Low "Diffused Taupe",Nike,2024-09-20,Friday,10:00,120,B,low_top,Fall,SNKRS
+Adidas Gazelle "Bold Pink",Adidas,2024-09-27,Friday,10:00,180,C,court,Fall,Adidas
+New Balance 574 "Nimbus Cloud",New Balance,2024-10-04,Friday,10:00,240,C,runner,Fall,NB
+Nike Zoom Vomero 5 "Earth",Nike,2024-10-11,Friday,11:00,15,A,runner,Fall,SNKRS
+Salehe Bembury x Reebok Pump Supreme "Cobblestone",Reebok,2024-10-18,Friday,11:00,2,S,high_top,Fall,Reebok
+Air Jordan 1 Retro High OG "Metallic Gold",Nike,2024-11-01,Friday,10:00,10,S,high_top,Fall,SNKRS
+Nike ACG Lowcate "Sequoia",Nike,2024-11-08,Friday,10:00,200,C,trail,Fall,SNKRS
+Adidas Samba OG "Night Indigo",Adidas,2024-11-15,Friday,10:00,35,A,court,Fall,Adidas
+New Balance 990v6 "Lunar New Year",New Balance,2024-11-22,Friday,10:00,25,A,runner,Fall,NB
+Jordan 11 "Gratitude",Nike,2024-12-14,Saturday,10:00,5,S,high_top,Winter,SNKRS
+Nike Dunk Low "Panda" Holiday restock,Nike,2024-12-20,Friday,10:00,300,B,low_top,Winter,SNKRS
+Adidas Ultra 4D "Triple White",Adidas,2024-12-27,Friday,09:00,90,B,runner,Winter,Adidas
+New Balance 1000 "Cordura Olive",New Balance,2025-01-10,Friday,10:00,150,C,trail,Winter,NB
+Nike Pegasus Trail 5 "Gorge Green",Nike,2025-01-17,Friday,10:00,420,C,trail,Winter,SNKRS
+Air Jordan 3 "Fear",Nike,2025-01-25,Saturday,10:00,7,S,mid_top,Winter,SNKRS
+Salehe Bembury x NB 1600 "Mars Yard",New Balance,2025-02-07,Friday,11:00,1,S,runner,Winter,NB
+Nike Zoom Vomero 5 "Mineral Slate",Nike,2025-02-14,Friday,11:00,18,A,runner,Winter,SNKRS
+Adidas Campus 00s "Core Black Gold",Adidas,2025-02-21,Friday,10:00,50,A,court,Winter,Adidas
+New Balance 998 "Made in USA",New Balance,2025-02-28,Friday,10:00,80,B,runner,Winter,NB
+Nike ACG Mountain Fly 2 "Anthracite",Nike,2025-03-07,Friday,10:00,280,C,trail,Spring,SNKRS
