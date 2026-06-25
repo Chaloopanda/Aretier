@@ -12,7 +12,7 @@
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-blue.svg?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
     <a href="https://python.langchain.com/docs/langgraph/"><img src="https://img.shields.io/badge/LangGraph-Stateful_Agents-232F3E.svg?style=flat-square&logo=amazon-aws&logoColor=white" alt="LangGraph"></a>
     <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Streamlit-App-FF4B4B.svg?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"></a>
-    <a href="https://deepmind.google/technologies/gemini/"><img src="https://img.shields.io/badge/Gemini-1.5_Flash-4285F4.svg?style=flat-square&logo=google&logoColor=white" alt="Gemini"></a>
+    <a href="https://ai.google.dev/gemma/"><img src="https://img.shields.io/badge/Gemma-3:4b-9b59b6.svg?style=flat-square&logo=google&logoColor=white" alt="Gemma 3"></a>
     <a href="https://www.trychroma.com/"><img src="https://img.shields.io/badge/ChromaDB-Vector_Store-FF6F00.svg?style=flat-square" alt="ChromaDB"></a>
   </p>
 </div>
@@ -40,7 +40,7 @@ graph LR
 
 - **🧠 Multi-Agent Orchestration**: 6 distinct specialist agents (Research, Design, Pricing, Timing, Copy, Critic) managed via a LangGraph fan-out topology.
 - **🛡️ Adversarial Evaluation**: An LLM-powered Critic evaluates the output against a deterministic rubric. If the approval score is `< 0.75`, the design is rejected and goes back to the drawing board (max 3 iterations).
-- **🎨 Multimodal AI**: Leverages Google Gemini 1.5 Flash for reasoning/copywriting and Imagen 3 for sneaker design generation.
+- **🎨 Multimodal AI**: Leverages the **Gemma 3:4b** model for advanced reasoning/copywriting and Imagen 3 for sneaker design generation.
 - **📊 RAG-Powered Decisions**: Uses local ChromaDB and `all-MiniLM-L6-v2` embeddings to retrieve historical market data, brand voice guidelines, and successful drop timings.
 - **🖼️ Quantitative Aesthetics**: Uses local CLIP (`ViT-B/32`) to compute cosine similarity between the design brief and the generated image, ensuring strict visual alignment.
 
@@ -49,15 +49,16 @@ graph LR
 | Agent | Role | Tech Stack |
 | :--- | :--- | :--- |
 | **🔍 Trend Research** | Scrapes Hypebeast & Reddit for aesthetic keywords | `feedparser`, `PRAW`, `ChromaDB RAG` |
-| **🎨 Design** | Writes briefs, generates images, scores with CLIP | `Gemini Imagen`, `CLIP (local)` |
+| **🎨 Design** | Writes briefs, generates images, scores with CLIP | `Gemma 3:4b` + `Imagen 3`, `CLIP (local)` |
 | **💰 Pricing** | Sets retail prices using historical resale comps | `ChromaDB market_data`, `StockX dataset` |
 | **⏰ Drop Timer** | Determines optimal launch date/time | `ChromaDB drop_timing`, `CSV Analytics` |
-| **✍️ Copywriter** | Drafts product descriptions & tweet copy | `Gemini`, `brand_voice RAG` |
+| **✍️ Copywriter** | Drafts product descriptions & tweet copy | `Gemma 3:4b`, `brand_voice RAG` |
 | **⚖️ Critic** | Adversarial review to prevent sycophancy | `Deterministic rubric`, `LLM Analysis` |
 
 ## 🛠️ Architecture Stack (100% Free)
 
-- **LLM & Image Gen**: Google Gemini 1.5 Flash + Imagen 3
+- **LLM**: Gemma 3:4b
+- **Image Gen**: Imagen 3
 - **Vector DB**: ChromaDB (Local, disk-persisted)
 - **Embeddings**: all-MiniLM-L6-v2 (Runs locally on GPU/CPU)
 - **Image Evaluation**: CLIP ViT-B/32 (Local, ~300MB VRAM footprint)
@@ -77,7 +78,7 @@ pip install -r requirements.txt
 ### 2. Configure Environment
 ```bash
 cp .env.example .env
-# Open .env and add your GEMINI_API_KEY
+# Open .env and add your required API keys or Local URLs
 ```
 
 ### 3. Initialize Vector Store (One-time)
@@ -90,13 +91,13 @@ python ingestion/build_vectorstore.py
 streamlit run app/streamlit_app.py
 ```
 
-## 🔑 Required API Keys (All Free Tier)
+## 🔑 Key Integrations
 
-| Service | Link | Tier Benefits |
+| Service | Link | Notes |
 | :--- | :--- | :--- |
-| **Gemini API** | [aistudio.google.com](https://aistudio.google.com) | 15 RPM, 1M TPM/day |
-| **LangSmith** | [smith.langchain.com](https://smith.langchain.com) | Free tier observability |
-| **Reddit API** | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) | Free read access |
+| **Gemma 3** | [ai.google.dev/gemma](https://ai.google.dev/gemma) | Powers agent reasoning and copywriting (4b model) |
+| **LangSmith** | [smith.langchain.com](https://smith.langchain.com) | Observability and graph tracing |
+| **Reddit API** | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) | Trend analysis and data ingestion |
 
 ## 📈 Evaluation Metrics
 
